@@ -1,0 +1,30 @@
+GET - Liste statique de livres (Static Module)
+Endpoint: http://localhost:3000/static
+
+GET - Liste dynamique de livres (Dynamic Module)
+Endpoint: http://localhost:3000/dynamic
+
+GET - Liste de tâches (livres) (Tasks Module)
+Endpoint: http://localhost:3000/tasks
+
+POST - Ajouter un livre (Dynamic Module)
+Endpoint: http://localhost:3000/dynamic
+Corps de la requête (JSON) : { "title": "Nouveau Livre", "author": "Auteur", "deadline": "2024-12-31" }
+
+POST - Ajouter une tâche (livre) (Tasks Module)
+Endpoint: http://localhost:3000/tasks
+Corps de la requête (JSON) : { "title": "Nouvelle Tâche", "author": "Responsable", "deadline": "2024-12-31" }
+
+PUT - Mettre à jour un livre (Dynamic Module)
+Endpoint: http://localhost:3000/dynamic/:index (Remplacez :index par l'index du livre à mettre à jour)
+Corps de la requête (JSON) : { "title": "Nouveau Titre", "author": "Nouvel Auteur", "deadline": "2025-01-31" }
+
+PUT - Mettre à jour une tâche (livre) (Tasks Module)
+Endpoint: http://localhost:3000/tasks/:index (Remplacez :index par l'index de la tâche à mettre à jour)
+Corps de la requête (JSON) : { "title": "Nouveau Titre", "author": "Nouveau Responsable", "deadline": "2025-01-31" }
+
+DELETE - Supprimer un livre (Dynamic Module)
+Endpoint: http://localhost:3000/dynamic/:index (Remplacez :index par l'index du livre à supprimer)
+
+DELETE - Supprimer une tâche (livre) (Tasks Module)
+Endpoint: http://localhost:3000/tasks/:index (Remplacez :index par l'index de la tâche à supprimer)
